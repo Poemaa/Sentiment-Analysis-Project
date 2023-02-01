@@ -1,0 +1,78 @@
+﻿@model SentimentAnalysis_Project.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Emri)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Emri)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mbiemri)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mbiemri)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ditelindja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ditelindja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gjinia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gjinia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dega)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dega)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FakultetiId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FakultetiId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Statusi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Statusi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FillimiStudimeve)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FillimiStudimeve)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MesatarjaNotes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MesatarjaNotes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Instituti)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Instituti.InstitutiId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdUser">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

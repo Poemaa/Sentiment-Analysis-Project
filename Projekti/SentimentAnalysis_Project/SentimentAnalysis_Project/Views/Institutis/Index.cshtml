@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SentimentAnalysis_Project.Models.Instituti>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Emri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lokacioni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NrStudenteve)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nrtelefonit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lokacioni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NrStudenteve)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nrtelefonit)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.InstitutiId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.InstitutiId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.InstitutiId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

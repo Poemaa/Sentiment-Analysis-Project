@@ -25,7 +25,7 @@ namespace SentimentAnalysis_Project.Controllers
         }
 
         // GET: Institutis/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null || _context.Institutis == null)
             {
@@ -33,7 +33,7 @@ namespace SentimentAnalysis_Project.Controllers
             }
 
             var instituti = await _context.Institutis
-                .FirstOrDefaultAsync(m => m.InstitutiId == id);
+                .FirstOrDefaultAsync(m => m.Emri == id);
             if (instituti == null)
             {
                 return NotFound();
@@ -65,7 +65,7 @@ namespace SentimentAnalysis_Project.Controllers
         }
 
         // GET: Institutis/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null || _context.Institutis == null)
             {
@@ -85,9 +85,9 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("InstitutiId,Emri,Lokacioni,NrStudenteve,Nrtelefonit")] Instituti instituti)
+        public async Task<IActionResult> Edit(string id, [Bind("InstitutiId,Emri,Lokacioni,NrStudenteve,Nrtelefonit")] Instituti instituti)
         {
-            if (id != instituti.InstitutiId)
+            if (id != instituti.Emri)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace SentimentAnalysis_Project.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!InstitutiExists(instituti.InstitutiId))
+                    if (!InstitutiExists(instituti.Emri))
                     {
                         return NotFound();
                     }
@@ -116,7 +116,7 @@ namespace SentimentAnalysis_Project.Controllers
         }
 
         // GET: Institutis/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null || _context.Institutis == null)
             {
@@ -124,7 +124,7 @@ namespace SentimentAnalysis_Project.Controllers
             }
 
             var instituti = await _context.Institutis
-                .FirstOrDefaultAsync(m => m.InstitutiId == id);
+                .FirstOrDefaultAsync(m => m.Emri == id);
             if (instituti == null)
             {
                 return NotFound();
@@ -136,7 +136,7 @@ namespace SentimentAnalysis_Project.Controllers
         // POST: Institutis/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             if (_context.Institutis == null)
             {
@@ -152,9 +152,9 @@ namespace SentimentAnalysis_Project.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool InstitutiExists(int id)
+        private bool InstitutiExists(string id)
         {
-          return _context.Institutis.Any(e => e.InstitutiId == id);
+          return _context.Institutis.Any(e => e.Emri == id);
         }
     }
 }

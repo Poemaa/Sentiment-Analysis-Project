@@ -56,7 +56,7 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdUser,Email,Password,Roli")] UserAcc userAcc)
+        public async Task<IActionResult> Create([Bind("IdUser,Email,Password")] UserAcc userAcc)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdUser,Email,Password,Roli")] UserAcc userAcc)
+        public async Task<IActionResult> Edit(int id, [Bind("IdUser,Email,Password")] UserAcc userAcc)
         {
             if (id != userAcc.IdUser)
             {

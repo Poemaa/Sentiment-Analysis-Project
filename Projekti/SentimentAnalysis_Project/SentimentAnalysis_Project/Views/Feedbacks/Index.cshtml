@@ -19,10 +19,10 @@
                 @Html.DisplayNameFor(model => model.Data)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Fakulteti)
+                @Html.DisplayNameFor(model => model.DegaFNavigation)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Instituti)
+                @Html.DisplayNameFor(model => model.InstitutiFNavigation)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.User)
@@ -40,10 +40,10 @@
                 @Html.DisplayFor(modelItem => item.Data)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Fakulteti.FakultetiId)
+                @Html.DisplayFor(modelItem => item.DegaFNavigation.Dega)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Instituti.InstitutiId)
+                @Html.DisplayFor(modelItem => item.InstitutiFNavigation.Emri)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.User.IdUser)

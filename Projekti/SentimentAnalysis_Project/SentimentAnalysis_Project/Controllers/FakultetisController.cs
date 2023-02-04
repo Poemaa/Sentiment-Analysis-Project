@@ -25,7 +25,7 @@ namespace SentimentAnalysis_Project.Controllers
         }
 
         // GET: Fakultetis/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null || _context.Fakultetis == null)
             {
@@ -33,7 +33,7 @@ namespace SentimentAnalysis_Project.Controllers
             }
 
             var fakulteti = await _context.Fakultetis
-                .FirstOrDefaultAsync(m => m.FakultetiId == id);
+                .FirstOrDefaultAsync(m => m.Dega == id);
             if (fakulteti == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("FakultetiId,Dega,Email,StatusiAkredititmit,VitiAkreditimit")] Fakulteti fakulteti)
+        public async Task<IActionResult> Create([Bind("FakultetiId,Dega,TitulliDiplomimit")] Fakulteti fakulteti)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace SentimentAnalysis_Project.Controllers
         }
 
         // GET: Fakultetis/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null || _context.Fakultetis == null)
             {
@@ -85,9 +85,9 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("FakultetiId,Dega,Email,StatusiAkredititmit,VitiAkreditimit")] Fakulteti fakulteti)
+        public async Task<IActionResult> Edit(string id, [Bind("FakultetiId,Dega,TitulliDiplomimit")] Fakulteti fakulteti)
         {
-            if (id != fakulteti.FakultetiId)
+            if (id != fakulteti.Dega)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace SentimentAnalysis_Project.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FakultetiExists(fakulteti.FakultetiId))
+                    if (!FakultetiExists(fakulteti.Dega))
                     {
                         return NotFound();
                     }
@@ -116,7 +116,7 @@ namespace SentimentAnalysis_Project.Controllers
         }
 
         // GET: Fakultetis/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null || _context.Fakultetis == null)
             {
@@ -124,7 +124,7 @@ namespace SentimentAnalysis_Project.Controllers
             }
 
             var fakulteti = await _context.Fakultetis
-                .FirstOrDefaultAsync(m => m.FakultetiId == id);
+                .FirstOrDefaultAsync(m => m.Dega == id);
             if (fakulteti == null)
             {
                 return NotFound();
@@ -136,7 +136,7 @@ namespace SentimentAnalysis_Project.Controllers
         // POST: Fakultetis/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             if (_context.Fakultetis == null)
             {
@@ -152,9 +152,9 @@ namespace SentimentAnalysis_Project.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FakultetiExists(int id)
+        private bool FakultetiExists(string id)
         {
-          return _context.Fakultetis.Any(e => e.FakultetiId == id);
+          return _context.Fakultetis.Any(e => e.Dega == id);
         }
     }
 }

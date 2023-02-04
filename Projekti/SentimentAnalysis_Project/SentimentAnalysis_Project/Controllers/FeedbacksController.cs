@@ -21,7 +21,7 @@ namespace SentimentAnalysis_Project.Controllers
         // GET: Feedbacks
         public async Task<IActionResult> Index()
         {
-            var draftP1Context = _context.Feedbacks.Include(f => f.Fakulteti).Include(f => f.Instituti).Include(f => f.User);
+            var draftP1Context = _context.Feedbacks.Include(f => f.DegaFNavigation).Include(f => f.InstitutiFNavigation).Include(f => f.User);
             return View(await draftP1Context.ToListAsync());
         }
 
@@ -34,8 +34,8 @@ namespace SentimentAnalysis_Project.Controllers
             }
 
             var feedback = await _context.Feedbacks
-                .Include(f => f.Fakulteti)
-                .Include(f => f.Instituti)
+                .Include(f => f.DegaFNavigation)
+                .Include(f => f.InstitutiFNavigation)
                 .Include(f => f.User)
                 .FirstOrDefaultAsync(m => m.Idfeedback == id);
             if (feedback == null)
@@ -49,8 +49,8 @@ namespace SentimentAnalysis_Project.Controllers
         // GET: Feedbacks/Create
         public IActionResult Create()
         {
-            ViewData["FakultetiId"] = new SelectList(_context.Fakultetis, "FakultetiId", "FakultetiId");
-            ViewData["InstitutiId"] = new SelectList(_context.Institutis, "InstitutiId", "InstitutiId");
+            ViewData["DegaF"] = new SelectList(_context.Fakultetis, "Dega", "Dega");
+            ViewData["InstitutiF"] = new SelectList(_context.Institutis, "Emri", "Emri");
             ViewData["UserId"] = new SelectList(_context.Users, "IdUser", "IdUser");
             return View();
         }
@@ -60,7 +60,7 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Idfeedback,Permbajtja,Data,InstitutiId,FakultetiId,UserId")] Feedback feedback)
+        public async Task<IActionResult> Create([Bind("Idfeedback,Permbajtja,Data,InstitutiF,DegaF,UserId")] Feedback feedback)
         {
             if (ModelState.IsValid)
             {
@@ -68,8 +68,8 @@ namespace SentimentAnalysis_Project.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FakultetiId"] = new SelectList(_context.Fakultetis, "FakultetiId", "FakultetiId", feedback.FakultetiId);
-            ViewData["InstitutiId"] = new SelectList(_context.Institutis, "InstitutiId", "InstitutiId", feedback.InstitutiId);
+            ViewData["DegaF"] = new SelectList(_context.Fakultetis, "Dega", "Dega", feedback.DegaF);
+            ViewData["InstitutiF"] = new SelectList(_context.Institutis, "Emri", "Emri", feedback.InstitutiF);
             ViewData["UserId"] = new SelectList(_context.Users, "IdUser", "IdUser", feedback.UserId);
             return View(feedback);
         }
@@ -87,8 +87,8 @@ namespace SentimentAnalysis_Project.Controllers
             {
                 return NotFound();
             }
-            ViewData["FakultetiId"] = new SelectList(_context.Fakultetis, "FakultetiId", "FakultetiId", feedback.FakultetiId);
-            ViewData["InstitutiId"] = new SelectList(_context.Institutis, "InstitutiId", "InstitutiId", feedback.InstitutiId);
+            ViewData["DegaF"] = new SelectList(_context.Fakultetis, "Dega", "Dega", feedback.DegaF);
+            ViewData["InstitutiF"] = new SelectList(_context.Institutis, "Emri", "Emri", feedback.InstitutiF);
             ViewData["UserId"] = new SelectList(_context.Users, "IdUser", "IdUser", feedback.UserId);
             return View(feedback);
         }
@@ -98,7 +98,7 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Idfeedback,Permbajtja,Data,InstitutiId,FakultetiId,UserId")] Feedback feedback)
+        public async Task<IActionResult> Edit(int id, [Bind("Idfeedback,Permbajtja,Data,InstitutiF,DegaF,UserId")] Feedback feedback)
         {
             if (id != feedback.Idfeedback)
             {
@@ -125,8 +125,8 @@ namespace SentimentAnalysis_Project.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FakultetiId"] = new SelectList(_context.Fakultetis, "FakultetiId", "FakultetiId", feedback.FakultetiId);
-            ViewData["InstitutiId"] = new SelectList(_context.Institutis, "InstitutiId", "InstitutiId", feedback.InstitutiId);
+            ViewData["DegaF"] = new SelectList(_context.Fakultetis, "Dega", "Dega", feedback.DegaF);
+            ViewData["InstitutiF"] = new SelectList(_context.Institutis, "Emri", "Emri", feedback.InstitutiF);
             ViewData["UserId"] = new SelectList(_context.Users, "IdUser", "IdUser", feedback.UserId);
             return View(feedback);
         }
@@ -140,8 +140,8 @@ namespace SentimentAnalysis_Project.Controllers
             }
 
             var feedback = await _context.Feedbacks
-                .Include(f => f.Fakulteti)
-                .Include(f => f.Instituti)
+                .Include(f => f.DegaFNavigation)
+                .Include(f => f.InstitutiFNavigation)
                 .Include(f => f.User)
                 .FirstOrDefaultAsync(m => m.Idfeedback == id);
             if (feedback == null)

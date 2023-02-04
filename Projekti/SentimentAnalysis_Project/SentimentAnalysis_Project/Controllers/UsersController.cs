@@ -21,7 +21,7 @@ namespace SentimentAnalysis_Project.Controllers
         // GET: Users
         public async Task<IActionResult> Index()
         {
-            var draftP1Context = _context.Users.Include(u => u.Instituti);
+            var draftP1Context = _context.Users.Include(u => u.DegaNavigation).Include(u => u.InstitutiEmriNavigation);
             return View(await draftP1Context.ToListAsync());
         }
 
@@ -34,7 +34,8 @@ namespace SentimentAnalysis_Project.Controllers
             }
 
             var user = await _context.Users
-                .Include(u => u.Instituti)
+                .Include(u => u.DegaNavigation)
+                .Include(u => u.InstitutiEmriNavigation)
                 .FirstOrDefaultAsync(m => m.IdUser == id);
             if (user == null)
             {
@@ -47,7 +48,8 @@ namespace SentimentAnalysis_Project.Controllers
         // GET: Users/Create
         public IActionResult Create()
         {
-            ViewData["InstitutiId"] = new SelectList(_context.Institutis, "InstitutiId", "InstitutiId");
+            ViewData["Dega"] = new SelectList(_context.Fakultetis, "Dega", "Dega");
+            ViewData["InstitutiEmri"] = new SelectList(_context.Institutis, "Emri", "Emri");
             return View();
         }
 
@@ -56,7 +58,7 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdUser,Emri,Mbiemri,Ditelindja,Gjinia,InstitutiId,Dega,FakultetiId,Statusi,FillimiStudimeve,MesatarjaNotes")] User user)
+        public async Task<IActionResult> Create([Bind("IdUser,Emri,Mbiemri,Ditelindja,Gjinia,InstitutiEmri,Dega,FakultetiId,Statusi,FillimiStudimeve,MesatarjaNotes")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -64,7 +66,8 @@ namespace SentimentAnalysis_Project.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["InstitutiId"] = new SelectList(_context.Institutis, "InstitutiId", "InstitutiId", user.InstitutiId);
+            ViewData["Dega"] = new SelectList(_context.Fakultetis, "Dega", "Dega", user.Dega);
+            ViewData["InstitutiEmri"] = new SelectList(_context.Institutis, "Emri", "Emri", user.InstitutiEmri);
             return View(user);
         }
 
@@ -81,7 +84,8 @@ namespace SentimentAnalysis_Project.Controllers
             {
                 return NotFound();
             }
-            ViewData["InstitutiId"] = new SelectList(_context.Institutis, "InstitutiId", "InstitutiId", user.InstitutiId);
+            ViewData["Dega"] = new SelectList(_context.Fakultetis, "Dega", "Dega", user.Dega);
+            ViewData["InstitutiEmri"] = new SelectList(_context.Institutis, "Emri", "Emri", user.InstitutiEmri);
             return View(user);
         }
 
@@ -90,7 +94,7 @@ namespace SentimentAnalysis_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdUser,Emri,Mbiemri,Ditelindja,Gjinia,InstitutiId,Dega,FakultetiId,Statusi,FillimiStudimeve,MesatarjaNotes")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("IdUser,Emri,Mbiemri,Ditelindja,Gjinia,InstitutiEmri,Dega,FakultetiId,Statusi,FillimiStudimeve,MesatarjaNotes")] User user)
         {
             if (id != user.IdUser)
             {
@@ -117,7 +121,8 @@ namespace SentimentAnalysis_Project.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["InstitutiId"] = new SelectList(_context.Institutis, "InstitutiId", "InstitutiId", user.InstitutiId);
+            ViewData["Dega"] = new SelectList(_context.Fakultetis, "Dega", "Dega", user.Dega);
+            ViewData["InstitutiEmri"] = new SelectList(_context.Institutis, "Emri", "Emri", user.InstitutiEmri);
             return View(user);
         }
 
@@ -130,7 +135,8 @@ namespace SentimentAnalysis_Project.Controllers
             }
 
             var user = await _context.Users
-                .Include(u => u.Instituti)
+                .Include(u => u.DegaNavigation)
+                .Include(u => u.InstitutiEmriNavigation)
                 .FirstOrDefaultAsync(m => m.IdUser == id);
             if (user == null)
             {

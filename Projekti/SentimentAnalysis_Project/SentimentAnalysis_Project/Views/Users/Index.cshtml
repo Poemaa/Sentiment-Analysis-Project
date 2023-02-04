@@ -25,9 +25,6 @@
                 @Html.DisplayNameFor(model => model.Gjinia)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Dega)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.FakultetiId)
             </th>
             <th>
@@ -40,7 +37,10 @@
                 @Html.DisplayNameFor(model => model.MesatarjaNotes)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Instituti)
+                @Html.DisplayNameFor(model => model.DegaNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InstitutiEmriNavigation)
             </th>
             <th></th>
         </tr>
@@ -61,9 +61,6 @@
                 @Html.DisplayFor(modelItem => item.Gjinia)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Dega)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.FakultetiId)
             </td>
             <td>
@@ -76,7 +73,10 @@
                 @Html.DisplayFor(modelItem => item.MesatarjaNotes)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Instituti.InstitutiId)
+                @Html.DisplayFor(modelItem => item.DegaNavigation.Dega)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InstitutiEmriNavigation.Emri)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdUser">Edit</a> |

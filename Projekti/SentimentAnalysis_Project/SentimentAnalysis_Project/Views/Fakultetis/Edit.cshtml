@@ -12,26 +12,16 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="FakultetiId" />
             <div class="form-group">
-                <label asp-for="Dega" class="control-label"></label>
-                <input asp-for="Dega" class="form-control" />
-                <span asp-validation-for="Dega" class="text-danger"></span>
+                <label asp-for="FakultetiId" class="control-label"></label>
+                <input asp-for="FakultetiId" class="form-control" />
+                <span asp-validation-for="FakultetiId" class="text-danger"></span>
             </div>
+            <input type="hidden" asp-for="Dega" />
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StatusiAkredititmit" class="control-label"></label>
-                <input asp-for="StatusiAkredititmit" class="form-control" />
-                <span asp-validation-for="StatusiAkredititmit" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="VitiAkreditimit" class="control-label"></label>
-                <input asp-for="VitiAkreditimit" class="form-control" />
-                <span asp-validation-for="VitiAkreditimit" class="text-danger"></span>
+                <label asp-for="TitulliDiplomimit" class="control-label"></label>
+                <input asp-for="TitulliDiplomimit" class="form-control" />
+                <span asp-validation-for="TitulliDiplomimit" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

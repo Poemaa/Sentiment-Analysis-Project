@@ -12,33 +12,21 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Dega)
+            @Html.DisplayNameFor(model => model.FakultetiId)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Dega)
+            @Html.DisplayFor(model => model.FakultetiId)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.TitulliDiplomimit)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StatusiAkredititmit)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StatusiAkredititmit)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.VitiAkreditimit)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.VitiAkreditimit)
+            @Html.DisplayFor(model => model.TitulliDiplomimit)
         </dd>
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="FakultetiId" />
+        <input type="hidden" asp-for="Dega" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>

@@ -51,7 +51,7 @@ namespace SentimentAnalysis_Project.Controllers
         {
             ViewData["DegaF"] = new SelectList(_context.Fakultetis, "Dega", "Dega");
             ViewData["InstitutiF"] = new SelectList(_context.Institutis, "Emri", "Emri");
-            ViewData["UserId"] = new SelectList(_context.Users, "IdUser", "IdUser");
+            ViewData["UserId"] = new SelectList(_context.Users, "IdUser", "Emri");
             return View();
         }
 
@@ -62,12 +62,11 @@ namespace SentimentAnalysis_Project.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Idfeedback,Permbajtja,Data,InstitutiF,DegaF,UserId")] Feedback feedback)
         {
-            if (ModelState.IsValid)
-            {
+
                 _context.Add(feedback);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            
             ViewData["DegaF"] = new SelectList(_context.Fakultetis, "Dega", "Dega", feedback.DegaF);
             ViewData["InstitutiF"] = new SelectList(_context.Institutis, "Emri", "Emri", feedback.InstitutiF);
             ViewData["UserId"] = new SelectList(_context.Users, "IdUser", "IdUser", feedback.UserId);

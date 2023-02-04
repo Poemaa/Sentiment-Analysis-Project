@@ -60,12 +60,12 @@ namespace SentimentAnalysis_Project.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdUser,Emri,Mbiemri,Ditelindja,Gjinia,InstitutiEmri,Dega,FakultetiId,Statusi,FillimiStudimeve,MesatarjaNotes")] User user)
         {
-            if (ModelState.IsValid)
-            {
+            
+            
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            
             ViewData["Dega"] = new SelectList(_context.Fakultetis, "Dega", "Dega", user.Dega);
             ViewData["InstitutiEmri"] = new SelectList(_context.Institutis, "Emri", "Emri", user.InstitutiEmri);
             return View(user);

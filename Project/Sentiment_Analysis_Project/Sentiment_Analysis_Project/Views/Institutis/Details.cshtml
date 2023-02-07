@@ -1,0 +1,43 @@
+﻿@model Sentiment_Analysis_Project.Models.Instituti
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Instituti</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Emri)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Emri)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lokacioni)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lokacioni)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NrStudenteve)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NrStudenteve)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nrtelefonit)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nrtelefonit)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.InstitutiId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

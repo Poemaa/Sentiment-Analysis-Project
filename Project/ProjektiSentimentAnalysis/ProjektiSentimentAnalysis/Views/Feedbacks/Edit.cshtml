@@ -1,0 +1,49 @@
+﻿@model ProjektiSentimentAnalysis.Models.Feedback
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Feedback</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FeedbackId" />
+            <div class="form-group">
+                <label asp-for="Permbajtja" class="control-label"></label>
+                <input asp-for="Permbajtja" class="form-control" />
+                <span asp-validation-for="Permbajtja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" class="form-control" />
+                <span asp-validation-for="Data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InstitutiId" class="control-label"></label>
+                <select asp-for="InstitutiId" class="form-control" asp-items="ViewBag.InstitutiId"></select>
+                <span asp-validation-for="InstitutiId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FakultetiId" class="control-label"></label>
+                <select asp-for="FakultetiId" class="form-control" asp-items="ViewBag.FakultetiId"></select>
+                <span asp-validation-for="FakultetiId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

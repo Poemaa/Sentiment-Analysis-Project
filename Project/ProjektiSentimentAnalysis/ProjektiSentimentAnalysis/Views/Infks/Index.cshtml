@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ProjektiSentimentAnalysis.Models.Infk>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusiAkredititmit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VitiAkreditimit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fakulteti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Instituti)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusiAkredititmit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VitiAkreditimit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fakulteti.FakultetiId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Instituti.InstitutiId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.InfkId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.InfkId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.InfkId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

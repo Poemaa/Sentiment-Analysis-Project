@@ -9,7 +9,7 @@ using ProjektiSentimentAnalysis.Areas.Identity;
 
 namespace ProjektiSentimentAnalysis.Models
 {
-    public class DataContext : IdentityDbContext<ApplicationUser>
+    public class DataContext : IdentityDbContext<IdentityUser>
     
     {
         public DataContext(DbContextOptions<DataContext> options)

@@ -142,6 +142,7 @@ namespace ProjektiSentimentAnalysis.Areas.Identity.Pages.Account
             {
                 var user = CreateUser();
 
+                
                 user.Emri = Input.Emri;
                 user.Mbiemri = Input.Mbiemri;
                 user.Ditelindja = Input.Ditelindja;

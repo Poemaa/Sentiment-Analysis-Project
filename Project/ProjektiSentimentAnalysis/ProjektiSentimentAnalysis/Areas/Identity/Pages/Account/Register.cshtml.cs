@@ -18,7 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using ProjektiSentimentAnalysis.Areas.Identity;
+using ProjektiSentimentAnalysis.Models;
 
 namespace ProjektiSentimentAnalysis.Areas.Identity.Pages.Account
 {

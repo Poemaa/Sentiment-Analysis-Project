@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gKDosqCF25EAPTIcPdIiDnLdJWyy+sGUhLhq1rgWP7ktaumalN2GafxkcgNri3BYZmtCwyk4i9gapKLDZ3slZg==",
+  "dgSpecHash": "lTCGZXpigmPY61Q0TKEUD1RaWgkML5MzIt7FbUgtP1mBnXyvwbQdE7QfOWxsTfQ4cdej+6O8oDRRQ3x/HitOYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msi1\\OneDrive - ubt-uni.net\\Desktop\\Dizajni\\ProjektiDizajn\\ProjektiSentimentAnalysis\\ProjektiSentimentAnalysis\\ProjektiSentimentAnalysis.csproj",
+  "projectFilePath": "C:\\Users\\msi1\\OneDrive - ubt-uni.net\\Desktop\\ProjektiFinal\\Sentiment-Analysis-Project\\Project\\ProjektiSentimentAnalysis\\ProjektiSentimentAnalysis\\ProjektiSentimentAnalysis.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msi1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\msi1\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

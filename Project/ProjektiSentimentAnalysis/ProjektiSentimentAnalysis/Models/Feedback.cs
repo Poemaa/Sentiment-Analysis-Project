@@ -19,5 +19,9 @@ namespace ProjektiSentimentAnalysis.Models
         public int FakultetiId { get; set; } 
         public Fakulteti Fakulteti { get; set; } = null!;
 
+        public string? UserId { get; set; }
+        [ForeignKey("UserId")]
+        public ApplicationUser? ApplicationUser { get; set; }
+
     }
 }

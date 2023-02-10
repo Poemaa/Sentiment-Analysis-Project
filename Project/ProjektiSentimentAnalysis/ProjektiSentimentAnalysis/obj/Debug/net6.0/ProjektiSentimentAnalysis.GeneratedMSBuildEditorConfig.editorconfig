@@ -5,156 +5,157 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjektiSentimentAnalysis
 build_property.RootNamespace = ProjektiSentimentAnalysis
-build_property.ProjectDir = C:\Users\Lenovo\Desktop\gitCl\Sentiment-Analysis-Project\Project\ProjektiSentimentAnalysis\ProjektiSentimentAnalysis\
+build_property.ProjectDir = C:\Users\Laptopi\Desktop\Proejkt\Sentiment-Analysis-Project\Project\ProjektiSentimentAnalysis\ProjektiSentimentAnalysis\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Desktop\gitCl\Sentiment-Analysis-Project\Project\ProjektiSentimentAnalysis\ProjektiSentimentAnalysis
+build_property.MSBuildProjectDirectory = C:\Users\Laptopi\Desktop\Proejkt\Sentiment-Analysis-Project\Project\ProjektiSentimentAnalysis\ProjektiSentimentAnalysis
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Create.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0ZXRpc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Delete.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0ZXRpc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Details.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0ZXRpc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Edit.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0ZXRpc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Index.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Fakultetis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0ZXRpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Create.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Delete.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Details.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Edit.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Index.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Feedbacks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Home/Index.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Home/Privacy.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Create.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ma3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Delete.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ma3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Details.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ma3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Edit.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ma3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Index.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Infks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ma3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Create.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRpc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Delete.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRpc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Details.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRpc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Edit.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRpc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Index.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Institutis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdGl0dXRpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Shared/Error.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/_ViewImports.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/_ViewStart.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/gitCl/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Shared/_Layout.cshtml]
+[C:/Users/Laptopi/Desktop/Proejkt/Sentiment-Analysis-Project/Project/ProjektiSentimentAnalysis/ProjektiSentimentAnalysis/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5e4vopcidp

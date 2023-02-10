@@ -7,33 +7,45 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" style="color:#87CEEB">Create New</a>
 </p>
 <table class="table">
-    <thead>
+    <thead class="table-info">
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FakultetiId)
+            </th>
+            <br />
             <th>
                 @Html.DisplayNameFor(model => model.Dega)
             </th>
+            <br />
             <th>
                 @Html.DisplayNameFor(model => model.TitulliDiplomimit)
             </th>
+            <br />
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FakultetiId)
+                </td>
+                <br>
             <td>
                 @Html.DisplayFor(modelItem => item.Dega)
             </td>
+            <br>
             <td>
                 @Html.DisplayFor(modelItem => item.TitulliDiplomimit)
             </td>
+            <br>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.FakultetiId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.FakultetiId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.FakultetiId">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.FakultetiId" style="color:#87CEEB">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.FakultetiId" style="color:#87CEEB">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.FakultetiId" style="color:#87CEEB">Delete</a>
             </td>
         </tr>
 }

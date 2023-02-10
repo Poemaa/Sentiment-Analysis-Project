@@ -4,9 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1 style="color:#87CEEB">Edit</h1>
 
-<h4>Infk</h4>
+<h4 style="color:#87CEEB">Infk</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,33 +18,38 @@
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="StatusiAkredititmit" class="control-label"></label>
                 <input asp-for="StatusiAkredititmit" class="form-control" />
                 <span asp-validation-for="StatusiAkredititmit" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="VitiAkreditimit" class="control-label"></label>
                 <input asp-for="VitiAkreditimit" class="form-control" />
                 <span asp-validation-for="VitiAkreditimit" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="FakultetiId" class="control-label"></label>
                 <select asp-for="FakultetiId" class="form-control" asp-items="ViewBag.FakultetiId"></select>
                 <span asp-validation-for="FakultetiId" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="InstitutiId" class="control-label"></label>
                 <select asp-for="InstitutiId" class="form-control" asp-items="ViewBag.InstitutiId"></select>
                 <span asp-validation-for="InstitutiId" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
+<br />
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

@@ -4,10 +4,10 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1 style="color:#87CEEB">Details</h1>
 
 <div>
-    <h4>Feedback</h4>
+    <h4 style="color:#87CEEB">Feedback</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -32,6 +32,9 @@
             @Html.DisplayNameFor(model => model.Fakulteti)
         </dt>
         <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fakulteti.FakultetiId)
+        </dd>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Fakulteti.FakultetiId)
         </dd>
     </dl>

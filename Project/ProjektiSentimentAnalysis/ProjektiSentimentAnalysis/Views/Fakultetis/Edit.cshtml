@@ -4,9 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1 style="color:#87CEEB">Edit</h1>
 
-<h4>Fakulteti</h4>
+<h4 style="color:#87CEEB">Fakulteti</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,18 +18,20 @@
                 <input asp-for="Dega" class="form-control" />
                 <span asp-validation-for="Dega" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="TitulliDiplomimit" class="control-label"></label>
                 <input asp-for="TitulliDiplomimit" class="form-control" />
                 <span asp-validation-for="TitulliDiplomimit" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-info" style="color:white;background-color:#87CEEB" />
             </div>
         </form>
     </div>
 </div>
-
+<br />
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

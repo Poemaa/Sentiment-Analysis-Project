@@ -7,10 +7,10 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" style="color:#87CEEB">Create New </a>
 </p>
 <table class="table">
-    <thead>
+    <thead class="table-info">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Emri)
@@ -43,9 +43,9 @@
                 @Html.DisplayFor(modelItem => item.Nrtelefonit)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.InstitutiId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.InstitutiId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.InstitutiId">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.InstitutiId" style="color:#87CEEB">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.InstitutiId" style="color:#87CEEB">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.InstitutiId" style="color:#87CEEB">Delete</a>
             </td>
         </tr>
 }

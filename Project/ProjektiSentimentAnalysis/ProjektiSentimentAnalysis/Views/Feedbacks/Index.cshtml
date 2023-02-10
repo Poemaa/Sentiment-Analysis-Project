@@ -7,15 +7,15 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" style="color:#87CEEB">Create New</a>
 </p>
 <table class="table">
-    <thead>
+    <thead class="table-info">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Permbajtja)
             </th>
-            <th>
+            <th type="date">
                 @Html.DisplayNameFor(model => model.Data)
             </th>
             <th>
@@ -24,28 +24,37 @@
             <th>
                 @Html.DisplayNameFor(model => model.Fakulteti)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicationUser)
+            </th>
+          
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+            <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Permbajtja)
             </td>
-            <td>
+            <td type="date">
                 @Html.DisplayFor(modelItem => item.Data)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Instituti.InstitutiId)
+                @Html.DisplayFor(modelItem => item.Instituti.Emri)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Fakulteti.FakultetiId)
+                @Html.DisplayFor(modelItem => item.Fakulteti.Dega)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ApplicationUser.Emri)
+                </td>
+
+
             <td>
-                <a asp-action="Edit" asp-route-id="@item.FeedbackId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.FeedbackId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.FeedbackId">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.FeedbackId" style="color:#87CEEB">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.FeedbackId" style="color:#87CEEB">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.FeedbackId" style="color:#87CEEB">Delete</a>
             </td>
         </tr>
 }

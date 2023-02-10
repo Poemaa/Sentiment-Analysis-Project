@@ -2,7 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body style="background-color:#E8E8E8">
+    <div id="container" style="display:flex;">
+        <div id="block1" style="display:flex;flex-direction:column">
+            <br />
+            <br />
+            <br />
+
+            <div class="text-right">
+                <h1 class="display-4">Mir&euml; se erdh&euml;t tek Busulla! </h1>
+                <br />
+                <p>Platforma e vetme n&euml; Kosov&euml; ku mund t&euml; gjeni p&euml;rgjigje p&euml;r t&euml; gjitha pyetjet rreth shkollimit tuaj universitar</p>
+            </div>
+            <br />
+            <div style="background-color:#87CEEB;border-radius:30px;width:450px;padding:12px;text-align:center">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Infks" asp-action="Index"><h3>Shiko Fakultetet</h3></a>
+            </div>
+            <br />
+            <div style="background-color:#87CEEB;border-radius:30px;width:450px;padding:12px;text-align:center">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Feedbacks" asp-action="Index"><h3>Shiko Feedback</h3></a>
+            </div>
+            <br />
+            <div style="background-color:#87CEEB;border-radius:30px;width:450px;padding:12px;text-align:center">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Feedbacks" asp-action="Create"> <h3>Shkruaj Feedback</h3></a>
+            </div>
+
+        </div>
+        <br />
+        <div style="float:right;display:flex;flex-direction:column;align-items:center;">
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <img src="/css/pics/pic1.svg" alt="Girl vector" width="560px" height="450px" />
+        </div>
+    </div>
+</body>
